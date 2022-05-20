@@ -1,0 +1,22 @@
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.stays {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+
+  /* max-width: 500px; */
+}
+
+.stays img {
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

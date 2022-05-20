@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Stay Page</title>
+  </head>
+  <body>
+    <h1><%= singleStay.name %></h1>
+    <div>
+      <img src="<%= singleStay.img %> " alt="" />
+      <h1><%= singleStay.location %></h1>
+      <p>$<%= singleStay.price %>/night</p>
+
+      <div>
+        <a href="/stays/<%= singleStay.id %>/edit">Update Stay</a>
+        <form method="POST" action="/stays/<%= singleStay.id %>?_method=DELETE">
+          <button>Delete Stay</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
